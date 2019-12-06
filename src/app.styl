@@ -1,0 +1,60 @@
+/*
+ * @Author: songliubiao
+ * @Date: 2019-12-05 19:27:23
+ * @LastEditTime: 2019-12-06 13:54:17
+ * @LastEditors: Please set LastEditors
+ * @Description: 小程序启动页样式
+ * @FilePath: \Verona\src\app.styl
+ */
+@import './assets/style/variable.styl';
+
+$search-bar-height = 80px;
+
+// tabs标签页
+.at-tabs__header {
+    justify-content: space-around;
+    .at-tabs__item {
+        padding: 24px 0;
+        flex: none;
+    }
+    .at-tabs__item--active {
+        color: $base-blue;
+    }
+    .at-tabs__item-underline {
+        background-color: $base-blue;
+        height: 4px;
+    }
+}
+
+// 搜索框
+.at-search-bar  {
+    padding: 20px 32px;
+    .at-search-bar__placeholder-wrap {
+        justify-content: left;
+        height: $search-bar-height;
+    }
+    .at-search-bar__input-cnt {
+        background-color: $search-back;
+        height: $search-bar-height;
+        border-radius: $search-bar-height;
+    }
+    .at-search-bar__input {
+        height: $search-bar-height !important;
+    }
+    .at-search-bar__action {
+        color: $base-blue;
+        height: 80px;
+        border: none;
+        background-color: $white;
+        line-height: 80px;
+        &:active {
+            opacity: 0.6 !important;
+        }
+    }
+    .at-search-bar__clear {
+        height: $search-bar-height;
+    }
+    &.at-search-bar::after {
+        border: none;
+    }
+}

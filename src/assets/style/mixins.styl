@@ -1,0 +1,82 @@
+/*
+ * @description: 样式混入文件
+ * @author: huxianghe
+ * @github: git@code.aliyun.com:QY_W/Verona.git
+ * @lastEditors: huxianghe
+ * @Date: 2019-07-19 09:46:51
+ * @LastEditTime: 2019-07-19 11:32:58
+ * @Copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import './variable'
+
+// border style
+bd(color = $color-theme, width = 1px)
+  border width solid color;/*no*/
+bd-t(color = $color-theme, width = 1px)
+  border-top width solid color;/*no*/
+bd-b(color = $color-theme, width = 1px)
+  border-bottom width solid color;/*no*/
+bd-r(color, width = 1px)
+  border-right width solid color;/*no*/
+
+border-radius(num)
+  border-radius num
+  overflow hidden
+
+// font-size style
+f12()
+  font-size 12rpx
+f14()
+  font-size 14rpx
+f16()
+  font-size 16rpx
+f18()
+  font-size 18rpx
+fz(size)
+  font-size size
+
+// flex grid
+flex-f()
+  display flex
+flex-align()
+  flex-f()
+  align-items center
+flex-between()
+  flex-f()
+  justify-content space-between
+flex-align-center()
+  flex-align()
+  justify-content center
+flex-align-between()
+  flex-between()
+  align-items center
+flex-col()
+  flex-f()
+  flex-direction column
+flex-col-between()
+  flex-col()
+  justify-content space-between
+
+tc()
+  text-align center
+tr()
+  text-align right
+
+// 多行文本溢出处理
+text-over(num)
+  overflow hidden
+  text-overflow ellipsis
+  display -webkit-box
+  -webkit-line-clamp num
+  -webkit-box-orient vertical
+  word-break break-all
+
+// 强制换行
+wb()
+  white-space normal
+  word-wrap break-word
+  word-break break-all
+
+wh(val)
+  width val
+  height val

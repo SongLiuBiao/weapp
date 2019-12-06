@@ -1,0 +1,65 @@
+/**
+ * @author minjie
+ * @createTime   2019/06/03
+ * @description  公共的样式复用
+ * @copyright Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+$color-0: #2CC7BA;
+$color-1: #F99D59;
+$color-2: #30344B;
+$color-3: #666666;
+$color-4: #999999;
+$color-5: #F5F5F5;
+
+@mixin inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// 标签的显示
+.cus-item {
+  @include inline-block;
+}
+.policy-container {
+  width: 200px;
+}
+// 模态框
+.pd-modal {
+  .at-modal__container {
+    width:490px;
+    background:rgba(255,255,255,1);
+    border-radius:24px;
+  }
+  .at-modal__header {
+    position: inherit;
+    font-size:32px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:44px;
+  }
+  .at-modal__content {
+    text-align: center;
+    min-height:0;
+    font-size:28px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    line-height:40px;
+  }
+  .at-modal__footer {
+    text-align: center;
+    button {
+      font-size:32px;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      color:#2CC7BA;
+    }
+  }
+  .at-modal__overlay {
+    background:rgba(0,0,0,0.5);
+    -webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+    filter: blur(5px);
+  }
+}
+

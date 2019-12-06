@@ -1,0 +1,42 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "Verona",
+	"description": "全逸早餐，B端小程序 包括快速接单、配餐，销售账务 一目了然，减少人工成本。",
+	"appid": "wx89d52a3782755142",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"enhance": false,
+		"coverView": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"enablePullDownRefresh": true
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"miniprogram": {
+		"current": 0,
+		"list": [
+			{
+				"id": -1,
+				"name": "商品信息页",
+				"pathName": "pages/goods/index",
+				"query": "",
+				"scene": null
+			}
+		]
+	},
+	"libVersion": "2.8.1",
+	"condition": {}
+}
